@@ -33,15 +33,15 @@
 
 ### 2. 公開鍵・秘密鍵を発行する
 1. "ssh-keygen"と入力して,Enterキーを押下する
-2. Generating public/private rsa key pair.  Enter file in which to save the key (C:\Users\"ユーザ名"/.ssh/id_rsa):  と表示されるので、Enterキーを押下する 
-　 ※"ユーザ名"はWindowsでログインしているユーザの名前
+2. Generating public/private rsa key pair.  Enter file in which to save the key (C:\Users\ユーザ名/.ssh/id_rsa):  と表示されるので、Enterキーを押下する 
+　 ※"ユーザ名" はWindowsでログインしているユーザの名前
 4. Enter passphrase (empty for no passphrase):  と表示されるので、Enterキーを押下する
 5. Enter same passphrase again:  と表示されるので、Enterキーを押下する
-6. コマンドライン上に表示されている C:\Users\"ユーザ名"/.ssh/ という文字をCtrl + C でコピーする
+6. コマンドライン上に表示されている C:\Users\ユーザ名/.ssh/ という文字をCtrl + C でコピーする
 7. エクスプローラを開いて、上記でコピーした文字をCtrl + V でペーストしてフォルダを開く  
 
 ### 3. GitHubに反映する
-1. C:\Users\"ユーザ名"/.ssh/ 配下にある "id_rsa.pub"というファイルをメモ帳で開く
+1. C:\Users\ユーザ名/.ssh/ 配下にある "id_rsa.pub"というファイルをメモ帳で開く
 2. メモ帳に表示された文字を Ctrl + A で全選択する
 3. 全選択した文字を Ctrl + C でコピーする
 4. GitHubのアカウントにログインした状態(していなければ、すること)で  https://github.com/settings/keys へ移動する
@@ -55,5 +55,5 @@
 2. 登録されている対象の公開鍵の Delete ボタンを押下する
 3. I understand, please delete this SSH key ボタンを押下する
 4. 削除対象の公開鍵が削除されていることを確認する
-5. エクスプローラで C:\Users\"ユーザ名"/.ssh/id_rsa に移動する
+5. エクスプローラで C:\Users\ユーザ名/.ssh/id_rsa に移動する
 6. 削除対象の鍵ペア(id_rsa および id_rsa.pub の2つのファイル)をDeleteで削除する

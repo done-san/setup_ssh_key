@@ -32,11 +32,12 @@
 
 ### 2. 公開鍵・秘密鍵を発行する
 1. "ssh-keygen"と入力して,Enterキーを押下する
-2. Generating public/private rsa key pair.  Enter file in which to save the key (C:\Users\"ユーザ名"/.ssh/id_rsa):  と表示されるので、Enterキーを押下する  ※"ユーザ名"はWindowsでログインしているユーザの名前
-3. Enter passphrase (empty for no passphrase):  と表示されるので、Enterキーを押下する
-4. Enter same passphrase again:  と表示されるので、Enterキーを押下する
-5. コマンドライン上に表示されている C:\Users\"ユーザ名"/.ssh/ という文字をCtrl + C でコピーする
-6. エクスプローラを開いて、上記でコピーした文字をCtrl + V でペーストしてフォルダを開く  
+2. Generating public/private rsa key pair.  Enter file in which to save the key (C:\Users\"ユーザ名"/.ssh/id_rsa):  と表示されるので、Enterキーを押下する 
+　 ※"ユーザ名"はWindowsでログインしているユーザの名前
+4. Enter passphrase (empty for no passphrase):  と表示されるので、Enterキーを押下する
+5. Enter same passphrase again:  と表示されるので、Enterキーを押下する
+6. コマンドライン上に表示されている C:\Users\"ユーザ名"/.ssh/ という文字をCtrl + C でコピーする
+7. エクスプローラを開いて、上記でコピーした文字をCtrl + V でペーストしてフォルダを開く  
 
 ### 3. GitHubに反映する
 1. C:\Users\"ユーザ名"/.ssh/ 配下にある "id_rsa.pub"というファイルをメモ帳で開く
@@ -45,7 +46,7 @@
 4. GitHubのアカウントにログインした状態(していなければ、すること)で  https://github.com/settings/keys へ移動する
 5. New SSH Key ボタンを押下する
 6. Title に識別しやすい名前で入力する(ex: "ホスト名")
-7. Key に4.でコピーした文字をCtrl + Vで登録する
+7. Key に.でコピーした文字をCtrl + Vで登録する
 8. SSH keysに登録されている内容(名前、時間など)が正しいことを確認する
 
 ### 4. 戻し作業について
